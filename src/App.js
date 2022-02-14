@@ -8,11 +8,11 @@ import Socials from './Components/Socials';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-bg-dev bg-no-repeat bg-fixed bg-cover">
         <NavBar />
         <Infos />
-        <Projects />
         <Socials />
+        <Projects />
         <ContactForm />
         <Footer />
     </div>

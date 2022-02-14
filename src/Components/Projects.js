@@ -2,7 +2,9 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div className='bg-blue-200 h-96'>
+      Projects
+    </div>
   )
 }
 
