@@ -11,6 +11,10 @@ function Technologies() {
     { name:'PHP', 
       icon:'fa-brands fa-php',
     },
+    {
+      name:'SQL',
+      icon:'fa-solid fa-database',
+    },
     { name:'React', 
       icon:'fa-brands fa-react',
     },
