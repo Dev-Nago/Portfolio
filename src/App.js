@@ -11,7 +11,7 @@ import Technologies from './Components/Technologies';
 
 function App() {
   return (
-    <div className="App bg-bg-dev bg-no-repeat bg-fixed bg-cover">
+    <div className="App bg-gradient-to-br from-white to-orange-400 bg-no-repeat bg-fixed bg-cover">
         <NavBar />
         <Infos />
         <Projects />

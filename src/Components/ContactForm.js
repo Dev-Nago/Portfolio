@@ -14,7 +14,7 @@ function ContactForm() {
             Message
             <textarea type="text" name='message' required className='h-48 m-5 border-2 border-black rounded-lg focus:ring-2 ring-orange-400 ring-offset-4'/>
           </label>
-          <input type='submit' value='Envoyer' className='border-2 border-black rounded-2xl hover:bg-orange-400 hover:border-black hover:text-white hover:cursor-pointer'/>
+          <input type='submit' value='Envoyer' className='border-2 border-black rounded-2xl bg-orange-300 hover:bg-orange-400 hover:border-black hover:cursor-pointer'/>
         </form>
       </div>
       
