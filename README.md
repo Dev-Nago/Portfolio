@@ -3,5 +3,4 @@
 ### Todo : 
 ### - smooth scrolling
 ### - ajout d'animation
-### - améliorer le form de contact
-### - diverses amélioration
+### - diverses amélioration graphiques
