@@ -4,6 +4,9 @@ function Footer() {
   return (
     <div className='bg-black'>
       <div className='text-2xl flex flex-row justify-center'>
+        <a href='/'>
+        <i className="fa-solid fa-arrow-up flex m-5 my-16 text-white hover:text-orange-400"></i>
+        </a>
         <a href='https://github.com/Dev-Nago' target='blank_' rel="noreferrer">
           <i className="fa-brands fa-github flex m-5 my-16 text-white hover:text-orange-400"></i>
         </a>

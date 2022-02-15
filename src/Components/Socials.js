@@ -2,7 +2,7 @@ import React from 'react'
 
 function Socials() {
   return (
-    <div className='bg-black'>
+    <div className='bg-black' id='Socials'>
       <div className='text-5xl flex flex-col justify-center md:flex-row'>
         <a href='https://github.com/Dev-Nago' target='blank_' rel="noreferrer">
           <i className="fa-brands fa-github flex flex-col m-5 my-16 text-white hover:text-orange-400"></i>
