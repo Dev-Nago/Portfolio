@@ -14,10 +14,13 @@ function Technologies() {
   ];
 
   return (
-    <div className="bg-black h-full p-10" id="Technos">
-      <div className="bg-white justify-center rounded-xl m-auto sm:w-1/2">
-        <h1 className="text-3xl font-bold">Technologies</h1>
-        <div className="grid grid-cols-2 gap-2 text-2xl m-5 lg:grid-cols-4">
+    <div
+      className="bg-black p-10 flex flex-col justify-center items-center h-screen"
+      id="Technos"
+    >
+      <div className="bg-white rounded-xl mt-32 p-5">
+        <h1 className="text-3xl font-bold m-5">Technologies</h1>
+        <div className="grid grid-cols-2 gap-2 text-2xl lg:grid-cols-4">
           {datas.map((data, key) => (
             <div
               key={key}

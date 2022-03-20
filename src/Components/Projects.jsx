@@ -26,11 +26,17 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-black text-white p-5 h-full" id="Projects">
-      <h1 className="text-4xl m-5 font-bold">Mes Projets</h1>
+    <div
+      className="bg-black text-white p-5 flex flex-col justify-center items-center sm:h-screen"
+      id="Projects"
+    >
+      <h1 className="text-4xl font-bold my-10 mt-32">Mes Projets</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, key) => (
-          <div key={key} className="bg-orange-400 rounded-xl m-5 flex flex-col">
+          <div
+            key={key}
+            className="bg-orange-400 rounded-xl w-[300px] m-5 flex flex-col"
+          >
             <i className={project.image}></i>
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
             <p className="m-2">{project.description}</p>

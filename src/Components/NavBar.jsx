@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ScrollIntoView from "react-scroll-into-view";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +9,10 @@ function NavBar() {
   };
 
   const NavbarItemStyle =
-    "hover:text-orange-400 border-2 border-orange-400 m-3 p-2 rounded-lg";
+    "hover:text-orange-400 border-2 border-orange-400 w-full h-12 rounded-lg";
 
   return (
-    <div className="h-24 bg-black text-white flex flex-row">
+    <div className="h-24 w-full bg-black text-white flex flex-row touch-none fixed">
       <h1 className="font-bold text-2xl m-auto z-40">Plaia Jean-Claude</h1>
       <i
         className={
@@ -34,21 +35,31 @@ function NavBar() {
             className="fa-solid fa-x text-2xl hover:cursor-pointer"
             onClick={toggle}
           ></i>
-          <a href="#Infos" className={NavbarItemStyle} onClick={toggle}>
-            Infos
-          </a>
-          <a href="#Projects" className={NavbarItemStyle} onClick={toggle}>
-            Projets
-          </a>
-          <a href="#Technos" className={NavbarItemStyle} onClick={toggle}>
-            Technologies
-          </a>
-          <a href="#Socials" className={NavbarItemStyle} onClick={toggle}>
-            Réseaux
-          </a>
-          <a href="#Contact" className={NavbarItemStyle} onClick={toggle}>
-            Contact
-          </a>
+          <ScrollIntoView selector="#Infos">
+            <button className={NavbarItemStyle} onClick={toggle}>
+              Infos
+            </button>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#Projects">
+            <button className={NavbarItemStyle} onClick={toggle}>
+              Projets
+            </button>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#Technos">
+            <button className={NavbarItemStyle} onClick={toggle}>
+              Technologies
+            </button>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#Socials">
+            <button className={NavbarItemStyle} onClick={toggle}>
+              Réseaux
+            </button>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#Contact">
+            <button className={NavbarItemStyle} onClick={toggle}>
+              Contact
+            </button>
+          </ScrollIntoView>
         </div>
       </div>
     </div>

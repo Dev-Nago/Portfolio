@@ -31,7 +31,7 @@ function ContactForm() {
 
   return (
     <div className="flex flex-row m-48 justify-center" id="Contact">
-      <div className="bg-white rounded-lg shadow-2xl">
+      <div className="bg-white mt-32 rounded-lg shadow-2xl">
         <h1 className="text-4xl text-black text my-5 font-bold">Contact</h1>
         <p className="text-green-400">{success}</p>
         <p className="text-red-400">{error}</p>
