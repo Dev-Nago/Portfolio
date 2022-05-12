@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [success, setSuccess] = useState("");
-  const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,17 +24,47 @@ function ContactForm() {
       .then(
         setEmail(""),
         setMessage(""),
-        setSuccess("Votre message à bien été envoyé !")
+        toast.success("Votre message à bien été envoyé.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        })
       )
-      .catch((error) => setError(error));
+      .catch((error) =>
+        toast.error(
+          { error },
+          {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          }
+        )
+      );
   };
 
   return (
     <div className="flex flex-row m-48 justify-center" id="Contact">
       <div className="bg-white mt-32 rounded-lg shadow-2xl">
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         <h1 className="text-4xl text-black text my-5 font-bold">Contact</h1>
-        <p className="text-green-400">{success}</p>
-        <p className="text-red-400">{error}</p>
         <form
           onSubmit={handleSubmit}
           className="flex flex-col m-10 w-60 sm:w-96"
