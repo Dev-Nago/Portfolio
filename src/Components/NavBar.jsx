@@ -25,16 +25,16 @@ function NavBar({ isDarkMode, setIsDarkMode }) {
         <i
           className={
             isOpen
-              ? "fa-solid fa-x text-2xl m-auto px-4 hover:cursor-pointer"
-              : "fa-solid fa-bars text-2xl m-auto px-4 hover:cursor-pointer"
+              ? "fa-solid fa-x text-2xl m-auto mx-4 hover:cursor-pointer"
+              : "fa-solid fa-bars text-2xl m-auto mx-4 hover:cursor-pointer"
           }
           onClick={toggleIsOpen}
         ></i>
         <i
           className={
             isDarkMode
-              ? "fa-solid fa-sun text-2xl m-auto px-4 hover:cursor-pointer"
-              : "fa-solid fa-moon text-2xl m-auto px-4 hover:cursor-pointer"
+              ? "fa-solid fa-sun text-2xl m-auto mx-4 hover:cursor-pointer"
+              : "fa-solid fa-moon text-2xl m-auto mx-4 hover:cursor-pointer"
           }
           onClick={toggleIsDarkMode}
         ></i>

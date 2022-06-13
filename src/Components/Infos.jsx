@@ -12,8 +12,9 @@ function Infos() {
           Développeur Web Junior
         </span>
         <p className="m-5">
-          Actuellement à la recherche d'un Stage pour parfaire mes compétences
-          en React et trouver un travail dans ce domaine.
+          Actuellement à la recherche d'un Stage/Période d'essai pour parfaire
+          mes compétences en Front/Backend notamment React/Node et décrocher une
+          première expérience professionnelle enrichissante.
         </p>
       </div>
     </div>
