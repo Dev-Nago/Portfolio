@@ -1,6 +1,6 @@
 import React from "react";
 
-function Technologies() {
+function Technologies({ isDarkMode }) {
   const datas = [
     { name: "HTML", icon: "fa-brands fa-html5" },
     { name: "CSS", icon: "fa-brands fa-css3-alt" },
@@ -15,10 +15,12 @@ function Technologies() {
 
   return (
     <div
-      className="bg-black p-10 flex flex-col justify-center items-center h-screen"
+      className={`p-10 flex flex-col justify-center items-center h-screen ${
+        isDarkMode ? "dark" : "light"
+      }`}
       id="Technos"
     >
-      <div className="bg-white rounded-xl mt-32 p-5">
+      <div className="border-2 border-orange-400 rounded-xl mt-32 p-5">
         <h1 className="text-3xl font-bold m-5">Technologies</h1>
         <div className="grid grid-cols-2 gap-2 text-2xl lg:grid-cols-4">
           {datas.map((data, key) => (

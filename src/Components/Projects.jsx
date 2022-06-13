@@ -1,6 +1,6 @@
 import React from "react";
 
-function Projects() {
+function Projects({ isDarkMode }) {
   const projects = [
     {
       image: "fa-solid fa-address-card text-5xl m-2",
@@ -27,7 +27,9 @@ function Projects() {
 
   return (
     <div
-      className="bg-black text-white p-5 flex flex-col justify-center items-center sm:h-screen"
+      className={`p-5 flex flex-col ${
+        isDarkMode ? "dark" : "light"
+      } justify-center items-center sm:h-screen`}
       id="Projects"
     >
       <h1 className="text-4xl font-bold my-10 mt-32">Mes Projets</h1>
@@ -35,7 +37,7 @@ function Projects() {
         {projects.map((project, key) => (
           <div
             key={key}
-            className="bg-orange-400 rounded-xl w-[300px] m-5 flex flex-col"
+            className="bg-gradient-to-br from-orange-400 to-orange-100 rounded-xl w-[300px] m-5 flex flex-col"
           >
             <i className={project.image}></i>
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
@@ -43,7 +45,9 @@ function Projects() {
             <div className="flex flex-row p-2 m-3">
               <a
                 href={project.link}
-                className="bg-white rounded-lg text-orange-400 p-2 m-2 w-1/2"
+                className={`rounded-lg p-2 m-2 w-1/2 ${
+                  isDarkMode ? "dark" : "light"
+                }`}
               >
                 Site
               </a>
@@ -51,7 +55,9 @@ function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-white rounded-lg text-orange-400 p-2 m-2 w-1/2"
+                className={`rounded-lg p-2 m-2 w-1/2 ${
+                  isDarkMode ? "dark" : "light"
+                }`}
               >
                 Github
               </a>
