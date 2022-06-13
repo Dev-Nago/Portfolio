@@ -45,9 +45,7 @@ function Projects({ isDarkMode }) {
             <div className="flex flex-row p-2 m-3">
               <a
                 href={project.link}
-                className={`rounded-lg p-2 m-2 w-1/2 ${
-                  isDarkMode ? "dark" : "light"
-                }`}
+                className="bg-white text-black rounded-lg p-2 m-2 w-1/2 hover:text-orange-400"
               >
                 Site
               </a>
@@ -55,9 +53,7 @@ function Projects({ isDarkMode }) {
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className={`rounded-lg p-2 m-2 w-1/2 ${
-                  isDarkMode ? "dark" : "light"
-                }`}
+                className="bg-white text-black rounded-lg p-2 m-2 w-1/2 hover:text-orange-400"
               >
                 Github
               </a>
