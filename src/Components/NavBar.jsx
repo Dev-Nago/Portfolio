@@ -12,7 +12,7 @@ function NavBar({ isDarkMode, setIsDarkMode }) {
   };
 
   const NavbarItemStyle =
-    "hover:text-orange-400 border-2 border-orange-400 w-full h-12 rounded-lg";
+    "hover:text-orange-400 hover:-translate-x-1/4 border-2 border-orange-400 w-full h-12 rounded-lg overflow-x-hidden transition duration-500";
 
   return (
     <div

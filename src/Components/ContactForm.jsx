@@ -52,7 +52,7 @@ function ContactForm() {
 
   return (
     <div className="flex flex-row m-48 justify-center" id="Contact">
-      <div className="bg-white mt-32 rounded-lg shadow-2xl">
+      <div className="bg-white mt-32 rounded-lg shadow-2xl shadow-current">
         <ToastContainer
           position="top-center"
           autoClose={5000}
@@ -96,7 +96,7 @@ function ContactForm() {
           <input
             type="submit"
             value="Envoyer"
-            className="border-2 border-black rounded-2xl bg-orange-300 hover:bg-orange-400 hover:border-black hover:cursor-pointer"
+            className="w-36 m-5 border-2 border-black rounded-lg bg-orange-300 hover:bg-orange-400 hover:scale-110 transition duration-500 hover:border-black hover:cursor-pointer"
           />
           <input type="hidden" name="_captcha" value="false" />
         </form>

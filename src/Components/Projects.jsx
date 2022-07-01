@@ -37,7 +37,7 @@ function Projects({ isDarkMode }) {
         {projects.map((project, key) => (
           <div
             key={key}
-            className="bg-gradient-to-br from-orange-400 to-orange-100 rounded-xl w-[300px] m-5 flex flex-col"
+            className="bg-gradient-to-br from-orange-400 to-orange-100 rounded-xl shadow-lg shadow-current w-[300px] m-5 flex flex-col hover:scale-110 transition duration-500"
           >
             <i className={project.image}></i>
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
