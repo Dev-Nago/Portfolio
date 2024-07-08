@@ -5,21 +5,37 @@ function Projects({ isDarkMode }) {
     {
       image: "fa-solid fa-address-card text-5xl m-2",
       title: "Projet Portfolio",
-      description: "Portfolio actuel utilisant ReactJS, TailwindCSS",
+      description: "Portfolio actuel réalisé dans le cadre de l'apprentissage de ReactJS",
+      technos: {
+        "ReactJS",
+        "TailwindCSS",
+      },
       link: "/",
       github: "https://github.com/Dev-Nago/portfolio",
     },
     {
       image: "fa-brands fa-bitcoin text-5xl m-2",
       title: "Projet Crypto",
-      description: "App Crypto utilisant Plain HTML/CSS/JS et API",
+      description: "Mini Projet durant la formation réalisé en 2j sur un Thème donné.",
+      technos: {
+        "HTML",
+        "CSS",
+        "Pain JS",
+        "REST API",
+      },
       link: "http://crypto-v2.great-site.net/",
       github: "https://github.com/Dev-Nago",
     },
     {
       image: "fa-solid fa-circle-question text-5xl m-2",
       title: "Projet Quiz",
-      description: "Quiz utilisant BDD SQL, Symfony et TailwindCSS",
+      description: "Projet de Quiz réalisé durant mon stage de formation comprenant inscription/connexion, base de données, classement etc...",
+      technos: {
+        "PHP",
+        "Symfony",
+        "SQL",
+        "TailwindCSS",
+      },
       link: "http://quizapp.great-site.net/",
       github: "https://github.com/Dev-Nago",
     },
@@ -42,6 +58,14 @@ function Projects({ isDarkMode }) {
             <i className={project.image}></i>
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
             <p className="m-2">{project.description}</p>
+            <p className="m-2">Technos :</p>
+            
+              {projects.technos.map((techno, key) => (
+                <ul key={key}>    
+                  <li>{techno}</li>
+                </ul>
+              )}
+            
             <div className="flex flex-row p-2 m-3">
               <a
                 href={project.link}
