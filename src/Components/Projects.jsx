@@ -20,7 +20,7 @@ function Projects({ isDarkMode }) {
       technos: {
         lang: "HTML",
         style: "CSS",
-        framework: "Pain JS",
+        framework: "Plain JS",
         api: "REST API",
       },
       link: "http://crypto-v2.great-site.net/",
