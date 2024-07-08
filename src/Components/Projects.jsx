@@ -44,7 +44,7 @@ function Projects({ isDarkMode }) {
   return (
     <div
       className={`p-5 flex flex-col ${
-        isDarkMode ? "dark" : "light"
+        isDarkMode ? "light" : "dark"
       } justify-center items-center sm:h-screen`}
       id="Projects"
     >
