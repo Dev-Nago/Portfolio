@@ -7,7 +7,7 @@ function Projects({ isDarkMode }) {
       title: "Projet Portfolio",
       description: "Portfolio actuel réalisé dans le cadre de l'apprentissage de ReactJS",
       technos: {
-        language: "ReactJS",
+        lang: "ReactJS",
         style: "TailwindCSS",
       },
       link: "/",
@@ -18,7 +18,7 @@ function Projects({ isDarkMode }) {
       title: "Projet Crypto",
       description: "Mini Projet durant la formation réalisé en 2j sur un Thème donné.",
       technos: {
-        language: "HTML",
+        lang: "HTML",
         style: "CSS",
         framework: "Pain JS",
         api: "REST API",
@@ -31,7 +31,7 @@ function Projects({ isDarkMode }) {
       title: "Projet Quiz",
       description: "Projet de Quiz réalisé durant mon stage de formation comprenant inscription/connexion, base de données, classement etc...",
       technos: {
-        language: "PHP",
+        lang: "PHP",
         style: "TailwindCSS",
         framework: "Symfony",
         bdd: "SQL",
@@ -60,7 +60,7 @@ function Projects({ isDarkMode }) {
             <p className="m-2">{project.description}</p>
             <p className="m-2">Technos :</p>
             <ul>
-              {projects.technos.language ? <li>{projects.technos.language}</li> : ""}
+              {projects.technos.lang ? <li>{projects.technos.lang}</li> : ""}
               {projects.technos.style ? <li>{projects.technos.style}</li> : ""}
               {projects.technos.framework ? <li>{projects.technos.framework}</li> : ""}
               {projects.technos.bdd ? <li>{projects.technos.bdd}</li> : ""}
