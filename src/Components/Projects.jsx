@@ -45,6 +45,8 @@ function Projects({ isDarkMode }) {
             <div className="flex flex-row p-2 m-3">
               <a
                 href={project.link}
+                target="_blank"
+                rel="noreferrer"
                 className="bg-white text-black rounded-lg p-2 m-2 w-1/2 hover:text-orange-400"
               >
                 Site
