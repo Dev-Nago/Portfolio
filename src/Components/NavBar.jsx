@@ -33,8 +33,8 @@ function NavBar({ isDarkMode, setIsDarkMode }) {
         <i
           className={
             isDarkMode
-              ? "fa-solid fa-sun text-2xl m-auto mx-4 hover:cursor-pointer"
-              : "fa-solid fa-moon text-2xl m-auto mx-4 hover:cursor-pointer"
+              ? "fa-solid fa-moon text-2xl m-auto mx-4 hover:cursor-pointer"
+              : "fa-solid fa-sun text-2xl m-auto mx-4 hover:cursor-pointer"
           }
           onClick={toggleIsDarkMode}
         ></i>
@@ -46,7 +46,7 @@ function NavBar({ isDarkMode, setIsDarkMode }) {
             ? `z-40 h-full w-full fixed ${
                 isDarkMode ? "light" : "dark"
               } left-0 flex flex-col ease-in-out duration-500 sm:w-96`
-            : "h-screen w-screen fixed {isDarkMode ? 'dark' : 'light'} flex flex-col -left-full ease-in-out duration-500 sm:w-96"
+            : "h-screen w-screen fixed {isDarkMode ? 'light' : 'dark'} flex flex-col -left-full ease-in-out duration-500 sm:w-96"
         }
         onClick={toggleIsOpen}
       >
