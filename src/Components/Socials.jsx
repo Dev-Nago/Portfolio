@@ -4,7 +4,7 @@ function Socials({ isDarkMode }) {
   return (
     <div
       className={`sm:h-screen place-content-center flex flex-col pb-48 ${
-        isDarkMode ? "dark" : "light"
+        isDarkMode ? "light" : "dark"
       }`}
       id="Socials"
     >
