@@ -17,7 +17,7 @@ function NavBar({ isDarkMode, setIsDarkMode }) {
   return (
     <div
       className={`h-24 w-full ${
-        isDarkMode ? "dark" : "light"
+        isDarkMode ? "light" : "dark"
       } flex flex-row touch-none fixed`}
     >
       <h1 className="font-bold text-2xl m-auto z-40">Plaia Jean-Claude</h1>
@@ -44,7 +44,7 @@ function NavBar({ isDarkMode, setIsDarkMode }) {
         className={
           isOpen
             ? `z-40 h-full w-full fixed ${
-                isDarkMode ? "dark" : "light"
+                isDarkMode ? "light" : "dark"
               } left-0 flex flex-col ease-in-out duration-500 sm:w-96`
             : "h-screen w-screen fixed {isDarkMode ? 'dark' : 'light'} flex flex-col -left-full ease-in-out duration-500 sm:w-96"
         }
