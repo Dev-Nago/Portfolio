@@ -7,8 +7,8 @@ function Projects({ isDarkMode }) {
       title: "Projet Portfolio",
       description: "Portfolio actuel réalisé dans le cadre de l'apprentissage de ReactJS",
       technos: {
-        "ReactJS",
-        "TailwindCSS",
+        language: "ReactJS",
+        style: "TailwindCSS",
       },
       link: "/",
       github: "https://github.com/Dev-Nago/portfolio",
@@ -18,10 +18,10 @@ function Projects({ isDarkMode }) {
       title: "Projet Crypto",
       description: "Mini Projet durant la formation réalisé en 2j sur un Thème donné.",
       technos: {
-        "HTML",
-        "CSS",
-        "Pain JS",
-        "REST API",
+        language: "HTML",
+        style: "CSS",
+        framework: "Pain JS",
+        api: "REST API",
       },
       link: "http://crypto-v2.great-site.net/",
       github: "https://github.com/Dev-Nago",
@@ -31,10 +31,10 @@ function Projects({ isDarkMode }) {
       title: "Projet Quiz",
       description: "Projet de Quiz réalisé durant mon stage de formation comprenant inscription/connexion, base de données, classement etc...",
       technos: {
-        "PHP",
-        "Symfony",
-        "SQL",
-        "TailwindCSS",
+        language: "PHP",
+        style: "TailwindCSS",
+        framework: "Symfony",
+        bdd: "SQL",
       },
       link: "http://quizapp.great-site.net/",
       github: "https://github.com/Dev-Nago",
@@ -59,12 +59,13 @@ function Projects({ isDarkMode }) {
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
             <p className="m-2">{project.description}</p>
             <p className="m-2">Technos :</p>
-            
-              {projects.technos.map((techno, key) => (
-                <ul key={key}>    
-                  <li>{techno}</li>
-                </ul>
-              )}
+            <ul>
+              {projects.technos.language ? <li>{projects.technos.language}</li> : ""}
+              {projects.technos.style ? <li>{projects.technos.style}</li> : ""}
+              {projects.technos.framework ? <li>{projects.technos.framework}</li> : ""}
+              {projects.technos.bdd ? <li>{projects.technos.bdd}</li> : ""}
+              {projects.technos.api ? <li>{projects.technos.api}</li> : ""}
+            </ul>
             
             <div className="flex flex-row p-2 m-3">
               <a
