@@ -60,11 +60,11 @@ function Projects({ isDarkMode }) {
             <p className="m-2">{project.description}</p>
             <p className="m-2">Technos :</p>
             <ul>
-              {projects.technos.lang ? <li>{projects.technos.lang}</li> : ""}
-              {projects.technos.style ? <li>{projects.technos.style}</li> : ""}
-              {projects.technos.framework ? <li>{projects.technos.framework}</li> : ""}
-              {projects.technos.bdd ? <li>{projects.technos.bdd}</li> : ""}
-              {projects.technos.api ? <li>{projects.technos.api}</li> : ""}
+              {project.technos.lang ? <li>{project.technos.lang}</li> : ""}
+              {project.technos.style ? <li>{project.technos.style}</li> : ""}
+              {project.technos.framework ? <li>{project.technos.framework}</li> : ""}
+              {project.technos.bdd ? <li>{project.technos.bdd}</li> : ""}
+              {project.technos.api ? <li>{project.technos.api}</li> : ""}
             </ul>
             
             <div className="flex flex-row p-2 m-3">
