@@ -3,7 +3,7 @@ import ScrollIntoView from "react-scroll-into-view";
 
 function Footer({ isDarkMode }) {
   return (
-    <div className={isDarkMode ? "dark" : "light"}>
+    <div className={isDarkMode ? "light" : "dark"}>
       <div className="text-2xl flex flex-row justify-center">
         <ScrollIntoView selector="#Infos">
           <i className="fa-solid fa-arrow-up flex m-5 my-16 hover:text-orange-400 cursor-pointer hover:scale-125 transition duration-300"></i>
