@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../Images";
-import image2 from "../Images";
-import image3 from "../Images";
+import image1 from "src/Images";
+import image2 from "src/Images";
+import image3 from "src/Images";
 
 function Projects({ isDarkMode }) {
   const projects = [
