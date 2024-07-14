@@ -1,14 +1,12 @@
 import React from "react";
-import image1 from "../Images/projet1.jpeg";
-import image2 from "../Images/projet2.jpeg";
-import image3 from "../Images/projet3.jpeg";
+import image1 from "../Images";
+import image2 from "../Images";
+import image3 from "../Images";
 
 function Projects({ isDarkMode }) {
   const projects = [
     {
-      images: {
-        image : {image1}
-      },
+      image: {image1},
       icon: "fa-solid fa-address-card text-5xl m-2",
       title: "Projet Portfolio",
       description: "Portfolio actuel réalisé dans le cadre de l'apprentissage de ReactJS",
@@ -20,9 +18,7 @@ function Projects({ isDarkMode }) {
       github: "https://github.com/Dev-Nago/portfolio",
     },
     {
-      images: {
-        image : {image2}
-      },
+      image: {image2},
       icon: "fa-brands fa-bitcoin text-5xl m-2",
       title: "Projet Crypto",
       description: "Mini Projet durant la formation réalisé en 2j sur un Thème donné.",
@@ -36,9 +32,7 @@ function Projects({ isDarkMode }) {
       github: "https://github.com/Dev-Nago",
     },
     {
-      images: {
-        image : {image3}
-      },
+      image: {image3},
       icon: "fa-solid fa-circle-question text-5xl m-2",
       title: "Projet Quiz",
       description: "Projet de Quiz réalisé durant mon stage de formation comprenant inscription/connexion, base de données, classement etc...",
@@ -69,7 +63,7 @@ function Projects({ isDarkMode }) {
           >
             <i className={project.icon}></i>
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
-            <img src={project.images.image} class="m-2 rounded object-cover" alt="Image de preview du site" />
+            <img src={project.image} class="m-2 rounded object-cover" alt="Image de preview du site" />
             <p className="m-2">{project.description}</p>
             <p className="m-2">Technos :</p>
             <ul>
