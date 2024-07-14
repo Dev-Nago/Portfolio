@@ -3,6 +3,7 @@ import React from "react";
 function Projects({ isDarkMode }) {
   const projects = [
     {
+      image: "./images/projet1.jpg",
       icon: "fa-solid fa-address-card text-5xl m-2",
       title: "Projet Portfolio",
       description: "Portfolio actuel réalisé dans le cadre de l'apprentissage de ReactJS",
@@ -14,6 +15,7 @@ function Projects({ isDarkMode }) {
       github: "https://github.com/Dev-Nago/portfolio",
     },
     {
+      image: "./images/projet2.jpg",
       icon: "fa-brands fa-bitcoin text-5xl m-2",
       title: "Projet Crypto",
       description: "Mini Projet durant la formation réalisé en 2j sur un Thème donné.",
@@ -27,6 +29,7 @@ function Projects({ isDarkMode }) {
       github: "https://github.com/Dev-Nago",
     },
     {
+      image: "./images/projet3.jpg",
       icon: "fa-solid fa-circle-question text-5xl m-2",
       title: "Projet Quiz",
       description: "Projet de Quiz réalisé durant mon stage de formation comprenant inscription/connexion, base de données, classement etc...",
@@ -57,6 +60,7 @@ function Projects({ isDarkMode }) {
           >
             <i className={project.icon}></i>
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
+            <img src={project.image} class="m-2 rounded object-cover" alt="Image de preview du site" />
             <p className="m-2">{project.description}</p>
             <p className="m-2">Technos :</p>
             <ul>
