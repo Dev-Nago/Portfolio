@@ -3,7 +3,8 @@ import React from "react";
 function Projects({ isDarkMode }) {
   const projects = [
     {
-      image: "fa-solid fa-address-card text-5xl m-2",
+      image: "/Images/projet1.jpeg",
+      icon: "fa-solid fa-address-card text-5xl m-2",
       title: "Projet Portfolio",
       description: "Portfolio actuel réalisé dans le cadre de l'apprentissage de ReactJS",
       technos: {
@@ -14,7 +15,8 @@ function Projects({ isDarkMode }) {
       github: "https://github.com/Dev-Nago/portfolio",
     },
     {
-      image: "fa-brands fa-bitcoin text-5xl m-2",
+      image: "/Images/projet2.jpeg",
+      icon: "fa-brands fa-bitcoin text-5xl m-2",
       title: "Projet Crypto",
       description: "Mini Projet durant la formation réalisé en 2j sur un Thème donné.",
       technos: {
@@ -27,7 +29,8 @@ function Projects({ isDarkMode }) {
       github: "https://github.com/Dev-Nago",
     },
     {
-      image: "fa-solid fa-circle-question text-5xl m-2",
+      image: "/Images/projet3.jpeg",
+      icon: "fa-solid fa-circle-question text-5xl m-2",
       title: "Projet Quiz",
       description: "Projet de Quiz réalisé durant mon stage de formation comprenant inscription/connexion, base de données, classement etc...",
       technos: {
@@ -55,8 +58,9 @@ function Projects({ isDarkMode }) {
             key={key}
             className="bg-gradient-to-br from-orange-400 to-orange-100 rounded-xl shadow-lg shadow-current w-[300px] m-5 flex flex-col justify-evenly hover:scale-110 transition duration-500"
           >
-            <i className={project.image}></i>
+            <i className={project.icon}></i>
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
+            <img src={project.image} class="m-2 rounded object-cover" alt="Image de preview du site">
             <p className="m-2">{project.description}</p>
             <p className="m-2">Technos :</p>
             <ul>
