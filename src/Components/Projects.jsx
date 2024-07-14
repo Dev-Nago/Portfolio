@@ -3,7 +3,7 @@ import React from "react";
 function Projects({ isDarkMode }) {
   const projects = [
     {
-      image: "./Images/projet1.jpeg",
+      image: "../Images/projet1.jpeg",
       icon: "fa-solid fa-address-card text-5xl m-2",
       title: "Projet Portfolio",
       description: "Portfolio actuel réalisé dans le cadre de l'apprentissage de ReactJS",
@@ -15,7 +15,7 @@ function Projects({ isDarkMode }) {
       github: "https://github.com/Dev-Nago/portfolio",
     },
     {
-      image: "./Images/projet2.jpeg",
+      image: "../Images/projet2.jpeg",
       icon: "fa-brands fa-bitcoin text-5xl m-2",
       title: "Projet Crypto",
       description: "Mini Projet durant la formation réalisé en 2j sur un Thème donné.",
@@ -29,7 +29,7 @@ function Projects({ isDarkMode }) {
       github: "https://github.com/Dev-Nago",
     },
     {
-      image: "./Images/projet3.jpeg",
+      image: "../Images/projet3.jpeg",
       icon: "fa-solid fa-circle-question text-5xl m-2",
       title: "Projet Quiz",
       description: "Projet de Quiz réalisé durant mon stage de formation comprenant inscription/connexion, base de données, classement etc...",
