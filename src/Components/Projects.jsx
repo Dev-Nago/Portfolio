@@ -60,7 +60,7 @@ function Projects({ isDarkMode }) {
           >
             <i className={project.icon}></i>
             <h2 className="m-2 text-xl font-semibold">{project.title}</h2>
-            <img src={project.image} class="m-2 rounded object-cover" alt="Image de preview du site"/>
+            <img src={project.image} class="m-2 rounded object-cover" alt="Image de preview du site" />
             <p className="m-2">{project.description}</p>
             <p className="m-2">Technos :</p>
             <ul>
