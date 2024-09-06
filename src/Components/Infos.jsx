@@ -3,7 +3,7 @@ import React from "react";
 function Infos() {
   return (
     <div className="h-screen text-black" id="Infos">
-      <div className="h-screen flex flex-col justify-center">
+      <div className="h-screen flex flex-col justify-center max-w-screen-lg">
         <h1 className="text-2xl font-semibold m-5">
           Bienvenue,
         </h1>
