@@ -12,8 +12,9 @@ function Infos() {
           Développeur Web Junior / Data IA enthousiaste
         </span>
         <p className="m-5">
-          Actuellement à la recherche d'un Bootcamp/Formation avec Alternance dans le domaine de la DATA/IA Dev, vous pouvez retrouver ici quelques projets et techno utilisés durant ma formation dev.
+          Passionné d'informatique au sens large depuis tout jeune, j'ai suivi une formation de Développeur Web et Web Mobile en 2021 et j'ai également effectué une découverte des différents métiers du numérique pendant 1 mois et me suis pris de passion pour l'IA et la Data. Vous pouvez retrouver ici quelques projets et technologies utilisés durant ma formation dev web.
         </p>
+        <p className="font-mono text-lg">Je suis actuellement en formation de développeur IA/Data chez Simplon.co et je recherche une Alternance en Développement IA / Data Analyst pour Mars 2025.</p>
       </div>
     </div>
   );
